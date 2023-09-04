@@ -8,5 +8,6 @@ import { UsersModule } from '../users/users.module';
   imports: [UsersModule],
   controllers: [NotesController],
   providers: [NotesService, NotesRepository],
+  exports: [NotesService]
 })
 export class NotesModule {}

@@ -34,4 +34,11 @@ export class UsersRepository {
       },
     });
   }
+
+  
+  removeUser(id: number) {
+    return this.prisma.user.deleteMany({
+      where: { id },
+    });
+  }
 }

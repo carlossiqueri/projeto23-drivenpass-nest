@@ -58,4 +58,8 @@ export class CredentialsService {
 
     return this.credentialsRepository.remove(id);
   }
+
+  async removeUser(userId: number){
+    return await this.credentialsRepository.removeUser(userId);
+  }
 }

@@ -56,4 +56,8 @@ export class NotesService {
 
     return this.notesRepository.remove(id);
   }
+
+  async removeUser(userId: number){
+    return await this.notesRepository.removeUser(userId);
+  }
 }

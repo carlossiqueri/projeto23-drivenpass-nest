@@ -79,4 +79,8 @@ export class CardsService {
     
       return this.cardsRepository.remove(id);
   }
+
+  async removeUser(userId: number){
+    return await this.cardsRepository.removeUser(userId);
+  }
 }

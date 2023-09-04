@@ -38,7 +38,7 @@ export class NotesService {
     if (!checkNote) throw new NotFoundException('Note not found.');
     if (checkNote.userId !== userId)
       throw new ForbiddenException(
-        'Users cant acces notes that dont belong to themselves.',
+        'Users cant access notes that dont belong to themselves.',
       );
 
     return checkNote;
